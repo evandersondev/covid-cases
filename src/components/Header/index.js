@@ -30,11 +30,12 @@ export default () => {
       </h1>
 
       <select onChange={getCountryForQuery} name="country" id="country">
-        {countries.map(country => (
-          <option key={country} value={country}>
-            {country}
-          </option>
-        ))}
+        {countries &&
+          countries.map(country => (
+            <option key={country} value={country}>
+              {country}
+            </option>
+          ))}
       </select>
     </Container>
   )
