@@ -5,7 +5,6 @@ const api = create({
 })
 
 const headers = {
-  method: 'get',
   mode: 'cors',
   cache: 'default',
 }
