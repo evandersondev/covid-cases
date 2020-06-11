@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  height: 80px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +16,11 @@ export const Container = styled.div`
     a {
       color: #f20022;
       font-weight: bold;
+
+      &:hover {
+        filter: contrast(800%);
+        text-decoration: underline;
+      }
     }
   }
 `

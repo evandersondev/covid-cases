@@ -9,7 +9,7 @@ export const Container = styled.div`
   td {
     border: 1px solid #01010122;
     border-collapse: collapse;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   table {
@@ -18,7 +18,7 @@ export const Container = styled.div`
     th,
     td {
       text-align: center;
-      padding: 8px 0;
+      padding: 15px;
       word-wrap: break-word;
     }
   }

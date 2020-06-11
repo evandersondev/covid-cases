@@ -7,7 +7,11 @@ function Footer() {
     <Container>
       <p>
         &copy; 2020 - made by{' '}
-        <a target="_blank" href="http://evandersondev.netlify.app">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="http://evandersondev.netlify.app"
+        >
           evandersondev
         </a>
       </p>

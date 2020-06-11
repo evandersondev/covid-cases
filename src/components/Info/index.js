@@ -6,7 +6,7 @@ import { Container } from './styles'
 function Info({ cases }) {
   return (
     <Container>
-      <table>
+      <table className="border-radius">
         <thead>
           <tr>
             <th>Today Cases</th>

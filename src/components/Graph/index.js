@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Chart } from 'react-google-charts'
 
 import { objectToArray } from '../../utils/objectToArray'
@@ -15,7 +15,7 @@ export default ({ cases }) => {
         loader={<div>Loading...</div>}
         data={[['todayCases', 'soday Deaths'], ...informationCases]}
         options={{
-          // legend: 'none',
+          legend: 'none',
           pieSliceText: 'label',
           backgroundColor: 'transparent',
           chartArea: { left: 0, top: 0, right: 0, bottom: 0 },
