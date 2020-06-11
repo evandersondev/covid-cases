@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import { getNamesAllCountries } from '../../services/api'
+import api from '../../services/api'
 
 import { Container } from './styles'
 import Logo from '../../assets/logo.png'
@@ -14,7 +14,7 @@ export default () => {
   }
 
   const getNamesOfCountries = async () => {
-    const response = await getNamesAllCountries()
+    const response = await api.getNamesAllCountries()
     setCountries(response)
   }
 

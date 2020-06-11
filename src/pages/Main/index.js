@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Container, Content } from './styles'
 import queryString from 'query-string'
-import { getCasesByCountry } from '../../services/api'
+import api from '../../services/api'
 
 import Header from '../../components/Header'
 import Graph from '../../components/Graph'
@@ -14,7 +14,7 @@ function Main({ location }) {
   const [cases, setCases] = useState({})
 
   const getCases = async country => {
-    const response = await getCasesByCountry(country)
+    const response = await api.getCasesByCountry(country)
     setCases(response)
   }
 
