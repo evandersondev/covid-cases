@@ -42,8 +42,6 @@ Covid Cases 19
 You can access in your browser the web application http://localhost:3000
 ```
 
-#### Online application at **<a href="https://covid-cases-19.netlify.app/" target="_blank">Covid Cases 19</a>**
-
 ## Features
 
 [//]: # 'Add the features of your project here:'
