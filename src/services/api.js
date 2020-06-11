@@ -8,25 +8,13 @@ export default {
   async getCasesByCountry(country = 'World') {
     const {
       data: { todayCases, todayDeaths, deaths, recovered },
-    } = await api.get(`/${country}`, {
-      headers: {
-        'Content-Type': 'application/json',
-        mode: 'cors',
-        cache: 'default',
-      },
-    })
+    } = await api.get(`/${country}`)
 
     return { todayCases, todayDeaths, deaths, recovered }
   },
 
   async getNamesAllCountries() {
-    const { data } = await api.get('/', {
-      headers: {
-        'Content-Type': 'application/json',
-        mode: 'cors',
-        cache: 'default',
-      },
-    })
+    const { data } = await api.get('/')
     const countries = data.map(({ country }) => country)
 
     return countries

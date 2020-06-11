@@ -25,10 +25,12 @@ function Main({ location }) {
   return (
     <Container>
       <Header />
-      <Content>
-        <Graph cases={cases} />
-        <Info cases={cases} />
-      </Content>
+      {cases && (
+        <Content>
+          <Graph cases={cases} />
+          <Info cases={cases} />
+        </Content>
+      )}
       <Footer />
     </Container>
   )
