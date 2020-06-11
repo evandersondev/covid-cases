@@ -17,10 +17,10 @@ function Info({ cases }) {
         </thead>
         <tbody>
           <tr>
-            <td>{cases && numberFormate(cases).todayCases}</td>
-            <td>{cases && numberFormate(cases).todayDeaths}</td>
-            <td>{cases && numberFormate(cases).deaths}</td>
-            <td>{cases && numberFormate(cases).recovered}</td>
+            <td>{numberFormate(cases).todayCases}</td>
+            <td>{numberFormate(cases).todayDeaths}</td>
+            <td>{numberFormate(cases).deaths}</td>
+            <td>{numberFormate(cases).recovered}</td>
           </tr>
         </tbody>
       </table>
