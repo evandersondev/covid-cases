@@ -14,4 +14,12 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+
+  .loading {
+    position: absolute;
+    top: 30px;
+    left: 42%;
+    z-index: 9999;
+  }
 `
