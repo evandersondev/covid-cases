@@ -5,18 +5,11 @@ const api = create({
 })
 
 export default {
-  async getCasesByCountry(country = 'World') {
+  async getCasesByCountry(country) {
     const {
       data: { todayCases, todayDeaths, deaths, recovered },
-    } = await api.get(`/${country}`)
+    } = await api.get(`${country}`)
 
     return { todayCases, todayDeaths, deaths, recovered }
-  },
-
-  async getNamesAllCountries() {
-    const { data } = await api.get('/')
-    const countries = data.map(({ country }) => country)
-
-    return countries
   },
 }

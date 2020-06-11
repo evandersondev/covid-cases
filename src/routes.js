@@ -5,6 +5,6 @@ import Main from './pages/Main'
 
 export default () => (
   <BrowserRouter>
-    <Route exact path="/" component={Main} />
+    <Route exact path="/:country?" component={Main} />
   </BrowserRouter>
 )

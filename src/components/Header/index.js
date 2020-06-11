@@ -1,26 +1,17 @@
-import React, { useEffect, useState } from 'react'
-import { useHistory } from 'react-router-dom'
-import api from '../../services/api'
+import React from 'react'
+import { useHistory, useParams } from 'react-router-dom'
+import countries from 'utils/namesOfCountries'
 
 import { Container } from './styles'
-import Logo from '../../assets/logo.png'
+import Logo from 'assets/logo.png'
 
 export default () => {
   const history = useHistory()
-  const [countries, setCountries] = useState([])
+  const country = useParams().country
 
   const getCountryForQuery = ({ target: { value } }) => {
-    return history.push(`/?country=${value}`)
+    return history.push(`/${value}`)
   }
-
-  const getNamesOfCountries = async () => {
-    const response = await api.getNamesAllCountries()
-    setCountries(response)
-  }
-
-  useEffect(() => {
-    getNamesOfCountries()
-  }, [])
 
   return (
     <Container>
@@ -29,13 +20,17 @@ export default () => {
         vid Cases
       </h1>
 
-      <select onChange={getCountryForQuery} name="country" id="country">
-        {countries &&
-          countries.map(country => (
-            <option key={country} value={country}>
-              {country}
-            </option>
-          ))}
+      <select
+        onChange={getCountryForQuery}
+        defaultValue={country}
+        name="country"
+        id="country"
+      >
+        {countries.map(country => (
+          <option key={country} value={country}>
+            {country}
+          </option>
+        ))}
       </select>
     </Container>
   )

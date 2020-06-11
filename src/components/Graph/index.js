@@ -1,7 +1,7 @@
 import React from 'react'
 import { Chart } from 'react-google-charts'
 
-import { objectToArray } from '../../utils/objectToArray'
+import { objectToArray } from 'utils/objectToArray'
 
 export default ({ cases }) => {
   const informationCases = objectToArray(cases)

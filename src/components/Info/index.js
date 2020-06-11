@@ -1,5 +1,5 @@
 import React from 'react'
-import { numberFormate } from '../../utils/numberFormat'
+import { numberFormate } from 'utils/numberFormat'
 
 import { Container } from './styles'
 
