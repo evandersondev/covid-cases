@@ -21,6 +21,5 @@ module.exports = {
     'react/prop-types': [0],
     'react/display-name': 'off',
     'react/jsx-no-target-blank': 'off',
-    'react-hooks/exhaustive-deps': 'warn',
   },
 }
