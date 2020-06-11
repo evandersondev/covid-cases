@@ -5,7 +5,7 @@ const api = create({
 })
 
 export default {
-  async getCasesByCountry(country) {
+  async getCasesByCountry(country = 'World') {
     const {
       data: { todayCases, todayDeaths, deaths, recovered },
     } = await api.get(`${country}`)

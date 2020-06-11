@@ -12,13 +12,13 @@ function Main({ match }) {
   const [cases, setCases] = useState({})
   const casesIsEmpty = Object.keys(cases).length !== 0
 
-  const getCases = async (country = 'World') => {
+  const getCases = async () => {
     const response = await api.getCasesByCountry(country)
     setCases(response)
   }
 
   useEffect(() => {
-    getCases(country)
+    getCases()
   }, [country])
 
   return (
