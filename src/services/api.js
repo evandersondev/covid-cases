@@ -10,6 +10,7 @@ export default {
       data: { todayCases, todayDeaths, deaths, recovered },
     } = await api.get(`/${country}`, {
       headers: {
+        'Content-Type': 'application/json',
         mode: 'cors',
         cache: 'default',
       },
@@ -21,6 +22,7 @@ export default {
   async getNamesAllCountries() {
     const { data } = await api.get('/', {
       headers: {
+        'Content-Type': 'application/json',
         mode: 'cors',
         cache: 'default',
       },
