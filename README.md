@@ -5,9 +5,9 @@ Covid Cases 19
 </h1>
 <br>
 <br>
-  <img  src="./src/assets/screen.gif" alt="YOUR_PROJECT_NAME" width="74%">
+  <img  src="./src/assets/screen.gif" alt="YOUR_PROJECT_NAME" width="68%">
 
-  <img  src="./src/assets/screen2.gif" alt="YOUR_PROJECT_NAME" width="24%">
+  <img  src="./src/assets/screen2.gif" alt="YOUR_PROJECT_NAME" width="22%">
 <br>
 <br>
 <br>
